@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Inventory" format=3 uid="uid://0udelblourl7"]
+
+[ext_resource type="Script" uid="uid://y34su88yyx3l" path="res://Inventory/inv_item.gd" id="1_ptot8"]
+[ext_resource type="Resource" uid="uid://6blu3433fjqs" path="res://Inventory/Items/hakurei_gohei.tres" id="2_8av0b"]
+[ext_resource type="Texture2D" uid="uid://c802tvvqrr6j4" path="res://2D Assets/Item Texture/foods.png" id="3_y7vrm"]
+[ext_resource type="Script" uid="uid://bf634mir304ts" path="res://Inventory/inv.gd" id="4_u6mjp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dop0b"]
+atlas = ExtResource("3_y7vrm")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="Resource" id="Resource_tdus5"]
+script = ExtResource("1_ptot8")
+name = " Apple"
+texture = SubResource("AtlasTexture_dop0b")
+
+[resource]
+script = ExtResource("4_u6mjp")
+items = Array[ExtResource("1_ptot8")]([ExtResource("2_8av0b"), null, null, SubResource("Resource_tdus5"), null])

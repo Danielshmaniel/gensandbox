@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://6blu3433fjqs"]
+
+[ext_resource type="Script" uid="uid://y34su88yyx3l" path="res://Inventory/inv_item.gd" id="1_8wtni"]
+[ext_resource type="Texture2D" uid="uid://xroeupje713y" path="res://2D Assets/Item Texture/gear.png" id="2_gdh2l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdh2l"]
+atlas = ExtResource("2_gdh2l")
+region = Rect2(0, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_8wtni")
+name = " Hakurei Gohei"
+texture = SubResource("AtlasTexture_gdh2l")
+metadata/_custom_type_script = "uid://y34su88yyx3l"
